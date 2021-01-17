@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="https://www.theodinproject.com/favicon-32x32.png" sizes="32x32">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="https://kit.fontawesome.com/2dba4ffdca.js" crossorigin="anonymous"></script>
     <title>Rock, Paper, Scissors</title>
 </head>
 <body>
-    
-    <script src="rps.js"></script>
+    <section class="container">
 
+        <header class="header">
+            <h1>Rock, Paper, Scissors</h1>
+        </header>
+
+        <h2>Select</h2>
+        <article class="choices">
+            <i id="rock" class="choice far fa-hand-rock fa-5x"></i>
+            <i id="paper" class="choice far fa-hand-paper fa-5x"></i>
+            <i id="scissors" class="choice far fa-hand-scissors fa-5x"></i>
+        </article>
+
+        <article id="score" class="score">
+            <p>Player: 0</p>
+            <p>Computer: 0</p>
+        </article>
+
+        <button id="restart" class="restart-btn">Restart Game</button>
+
+    </section>
+
+    <section class="modal">
+        <article id="result" class="modal-content"></article>
+    </section>
+
+    <!-- <script src="js/rps.js"></script> -->
+    <script src="js/media.js"></script>
 </body>
 </html>
