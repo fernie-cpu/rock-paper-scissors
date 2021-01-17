@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500&display=swap');
+
+:root {
+    --primary-color: #573994;
+    --comp-color: #2e2055;
+    --light-color: rgb(230, 228, 228);
+    --lose-color: #da2929;
+    --win-color: #27ac37;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Chakra Petch';
+    line-height: 1.6;
+    background: #18143c;
+    color: var(--light-color);
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.restart-btn {
+    display: none;
+    background: var(--light-color);
+    color: #333;
+    padding: 0.7rem 1.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-top: 1rem;
+}
+
+.restart-btn:hover {
+    background: var(--primary-color);
+    color: rgb(230, 228, 228);
+}
+
+.header {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    font-size: 2.3rem;
+    text-decoration: underline;
+}
+
+.score {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.2rem;
+}
+
+.score p:first-child {
+    background: var(--light-color);
+    color: #333;
+}
+
+.score p:last-child {
+    background: var(--comp-color);
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin: 1rem 0 2.6rem 0;
+    text-align: center;
+}
+
+.choice {
+    cursor: pointer;
+    border: .4rem solid var(--light-color);
+    border-radius: .5rem;
+    transition: all .5s ease;
+    padding: .5rem;
+}
+
+.choice:hover {
+    color: var(--primary-color);
+    border: .4rem solid var(--primary-color);
+    transform: scale(1.1);
+}
+
+.text-win {
+    color: var(--win-color);
+}
+
+.text-lose {
+    color: var(--lose-color);
+}
+
+@media screen and (max-width: 700px) {
+    .rock,
+    .paper,
+    .scissors {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .choices {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rock,
+    .paper,
+    .scissors {
+        font-size: 60px;
+    }
+}
