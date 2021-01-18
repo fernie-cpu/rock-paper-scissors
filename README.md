@@ -1,2 +1,2 @@
 # rock-paper-scissors
-//starting...
+> This was a LOT to take in
